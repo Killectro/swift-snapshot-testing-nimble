@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0ADC04879B2F665E4AEC1FF8 /* Pods_SnapshotTesting_Nimble_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC51B43E95E7C25BD475F57 /* Pods_SnapshotTesting_Nimble_Example.framework */; };
 		2214181821B76AF8001F11E7 /* SnapshotTesting_Nimble_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214181721B76AF8001F11E7 /* SnapshotTesting_Nimble_ExampleTests.swift */; };
-		2214181F21B76B0A001F11E7 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		2253C56721B64AAB00188911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2253C56621B64AAB00188911 /* Foundation.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -46,8 +45,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		758A5C5B79D8874786F7F10C /* Pods-SnapshotTesting-Nimble_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTesting-Nimble_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTesting-Nimble_Tests/Pods-SnapshotTesting-Nimble_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		85330588D649F0E7D3EE77A1 /* Pods_SnapshotTesting_Nimble_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotTesting_Nimble_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97553E41EC197A23033AE2F /* Pods_SnapshotTesting_Nimble_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotTesting_Nimble_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +102,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SnapshotTesting-Nimble */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				2214181621B76AF8001F11E7 /* SnapshotTesting-Nimble_ExampleTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				02439A3AFE48660ABFF8E176 /* Pods */,
@@ -140,23 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -364,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2214181821B76AF8001F11E7 /* SnapshotTesting_Nimble_ExampleTests.swift in Sources */,
-				2214181F21B76B0A001F11E7 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

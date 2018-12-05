@@ -9,15 +9,15 @@ import Foundation
 import Nimble
 import SnapshotTesting
 
-public func haveValidSnapshot<A, B>(
-    as strategy: Snapshotting<A, B>,
+public func haveValidSnapshot<Value, Format>(
+    as strategy: Snapshotting<Value, Format>,
     named name: String? = nil,
     record recording: Bool = false,
     timeout: TimeInterval = 5,
     file: StaticString = #file,
     testName: String = CurrentTestCaseTracker.shared.currentTestCase?.sanitizedName ?? #function,
     line: UInt = #line
-    ) -> Predicate<A> {
+    ) -> Predicate<Value> {
     return Predicate { actualExpression in
         guard let value = try actualExpression.evaluate() else {
             return PredicateResult(status: .fail, message: .fail("have valid snapshot"))
