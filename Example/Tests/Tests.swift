@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import SnapshotTesting-Nimble
+import SnapshotTesting_Nimble
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

@@ -1,0 +1,35 @@
+{
+  "name": "SnapshotTesting-Nimble",
+  "version": "0.1.0",
+  "summary": "Nimble matchers for swift-snapshot-testing by pointfreeco",
+  "description": "Implementation heavily inspired by Ash Furrow's wonderful Nimble-Snapshots.",
+  "homepage": "https://github.com/killectro/swift-snapshot-testing-nimble",
+  "license": "MIT",
+  "authors": {
+    "DJ Mitchell": "killectro@gmail.com"
+  },
+  "social_media_url": "https://twitter.com/killectro",
+  "source": {
+    "git": "https://github.com/killectro/swift-snapshot-testing-nimble.git",
+    "tag": "0.1.0"
+  },
+  "dependencies": {
+    "SnapshotTesting": [
+      "1.0.0"
+    ],
+    "Nimble": [
+
+    ]
+  },
+  "swift_version": "4.2",
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.10",
+    "tvos": "10.0"
+  },
+  "frameworks": "XCTest",
+  "source_files": [
+    "SnapshotTesting-Nimble/Classes",
+    "SnapshotTesting-Nimble/Classes/*.{h,m,swift}"
+  ]
+}

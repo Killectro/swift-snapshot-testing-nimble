@@ -1,0 +1,6 @@
+framework module SnapshotTesting_Nimble {
+  umbrella header "SnapshotTesting-Nimble-umbrella.h"
+
+  export *
+  module * { export * }
+}

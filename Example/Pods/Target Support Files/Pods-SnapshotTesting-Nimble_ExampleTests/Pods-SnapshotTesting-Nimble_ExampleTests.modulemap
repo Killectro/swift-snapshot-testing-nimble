@@ -1,0 +1,6 @@
+framework module Pods_SnapshotTesting_Nimble_ExampleTests {
+  umbrella header "Pods-SnapshotTesting-Nimble_ExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
