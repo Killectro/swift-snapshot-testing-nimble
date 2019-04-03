@@ -1,0 +1,3 @@
+github "DomainGroupOSS/swift-snapshot-testing" "e658730aaab444a7223b0f3d60156e0deb7aaeb9"
+github "Quick/Nimble" "v7.1.3"
+github "Quick/Quick" "v1.3.0"
