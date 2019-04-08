@@ -18,11 +18,6 @@
 
 /* Begin PBXFileReference section */
 		2253C56621B64AAB00188911 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		356F5E599DD778758267C856 /* Pods-SnapshotTesting-Nimble_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTesting-Nimble_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTesting-Nimble_Tests/Pods-SnapshotTesting-Nimble_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3A4799E57B9A78F00B244B98 /* Pods-SnapshotTesting-Nimble_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTesting-Nimble_ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTesting-Nimble_ExampleTests/Pods-SnapshotTesting-Nimble_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		42748B604203DDB33A6BE4D7 /* Pods-SnapshotTesting-Nimble_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTesting-Nimble_ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTesting-Nimble_ExampleTests/Pods-SnapshotTesting-Nimble_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5B182A7A78CBBC9FA78B66E7 /* Pods-SnapshotTesting-Nimble_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTesting-Nimble_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTesting-Nimble_Example/Pods-SnapshotTesting-Nimble_Example.release.xcconfig"; sourceTree = "<group>"; };
-		758A5C5B79D8874786F7F10C /* Pods-SnapshotTesting-Nimble_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTesting-Nimble_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTesting-Nimble_Tests/Pods-SnapshotTesting-Nimble_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AC742F62254EDF100463C58 /* SnapshotTesting_Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapshotTesting_Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC742F82254EDF100463C58 /* SnapshotTesting_Nimble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapshotTesting_Nimble.h; sourceTree = "<group>"; };
 		9AC742F92254EDF100463C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,7 +27,6 @@
 		9AC7430E2254EEA400463C58 /* SnapshotTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapshotTesting.framework; path = Carthage/Build/iOS/SnapshotTesting.framework; sourceTree = "<group>"; };
 		9AC7430F2254EEA400463C58 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		9AC743132254EEB200463C58 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DD20C4C2D0D3B9A2E8418306 /* Pods-SnapshotTesting-Nimble_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTesting-Nimble_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTesting-Nimble_Example/Pods-SnapshotTesting-Nimble_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,25 +44,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02439A3AFE48660ABFF8E176 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD20C4C2D0D3B9A2E8418306 /* Pods-SnapshotTesting-Nimble_Example.debug.xcconfig */,
-				5B182A7A78CBBC9FA78B66E7 /* Pods-SnapshotTesting-Nimble_Example.release.xcconfig */,
-				758A5C5B79D8874786F7F10C /* Pods-SnapshotTesting-Nimble_Tests.debug.xcconfig */,
-				356F5E599DD778758267C856 /* Pods-SnapshotTesting-Nimble_Tests.release.xcconfig */,
-				42748B604203DDB33A6BE4D7 /* Pods-SnapshotTesting-Nimble_ExampleTests.debug.xcconfig */,
-				3A4799E57B9A78F00B244B98 /* Pods-SnapshotTesting-Nimble_ExampleTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				9AC742F72254EDF100463C58 /* SnapshotTesting-Nimble */,
 				607FACD11AFB9204008FA782 /* Products */,
-				02439A3AFE48660ABFF8E176 /* Pods */,
 				840D07ECB202CA3E2F71EAAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
