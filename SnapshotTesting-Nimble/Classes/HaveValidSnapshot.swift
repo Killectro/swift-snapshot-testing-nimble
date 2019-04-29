@@ -61,7 +61,7 @@ public func haveValidInlineSnapshot<Value>(
         guard let errorMessage = _verifyInlineSnapshot(
             matching: value,
             as: strategy,
-            record: record,
+            record: recording,
             timeout: timeout,
             with: reference,
             file: file,
