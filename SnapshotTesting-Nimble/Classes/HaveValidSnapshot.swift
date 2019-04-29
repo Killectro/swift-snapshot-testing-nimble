@@ -42,3 +42,38 @@ public func haveValidSnapshot<Value, Format>(
         )
     }
 }
+
+public func haveValidInlineSnapshot<Value>(
+    as strategy: Snapshotting<Value, String>,
+    named name: String? = nil,
+    record recording: Bool = false,
+    timeout: TimeInterval = 5,
+    with reference: String,
+    file: StaticString = #file,
+    testName: String = CurrentTestCaseTracker.shared.currentTestCase?.sanitizedName ?? #function,
+    line: UInt = #line
+    ) -> Predicate<Value> {
+    return Predicate { actualExpression in
+        guard let value = try actualExpression.evaluate() else {
+            return PredicateResult(status: .fail, message: .fail("have valid inline snapshot"))
+        }
+
+        guard let errorMessage = _verifyInlineSnapshot(
+            matching: value,
+            as: strategy,
+            record: record,
+            timeout: timeout,
+            with: reference,
+            file: file,
+            testName: testName,
+            line: line
+            ) else {
+                return PredicateResult(bool: true, message: .fail("have valid inline snapshot"))
+        }
+
+        return PredicateResult(
+            bool: false,
+            message: .fail(errorMessage)
+        )
+    }
+}
