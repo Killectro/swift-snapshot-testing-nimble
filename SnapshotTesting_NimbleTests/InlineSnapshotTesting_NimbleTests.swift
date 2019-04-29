@@ -1,6 +1,6 @@
 //
-//  SnapshotTesting_Nimble_ExampleTests.swift
-//  SnapshotTesting-Nimble_ExampleTests
+//  InlineSnapshotTestingNimbleSpec.swift
+//  SnapshotTesting_NimbleTests
 //
 //  Created by DJ Mitchell on 12/4/18.
 //  Copyright © 2018 CocoaPods. All rights reserved.
