@@ -1,0 +1,45 @@
+name: Test and Package Framework
+
+on:
+  push:
+    branches: [ kemal/spm-1 ]
+ 
+jobs:
+
+  test-job:
+    name: Test
+    runs-on: macos-latest
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_12.2.app/Contents/Developer
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Building for testing
+        run: |
+          ./ci-scripts/build-for-testing.sh
+
+      - name: Testing without building
+        run: |
+          ./ci-scripts/test-without-building.sh
+
+
+  package-job:
+    name: Package
+    needs: test-job
+    runs-on: macos-latest
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_12.2.app/Contents/Developer
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Package Framework
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
+          BUILD_NAME: ${{ github.ref }}
+          
+        run: |
+          echo done!
