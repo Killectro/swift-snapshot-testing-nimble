@@ -8,9 +8,10 @@
 
 import Quick
 import Nimble
-import SnapshotTesting
 import SnapshotTesting_Nimble
 
+#if canImport(UIKit)
+import UIKit
 class SnapshotTestingNimbleSpec: QuickSpec {
 
     override func spec() {
@@ -47,3 +48,6 @@ class SnapshotTestingNimbleSpec: QuickSpec {
         }
     }
 }
+#endif
+
+
