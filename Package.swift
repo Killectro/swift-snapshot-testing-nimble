@@ -25,12 +25,14 @@ let package = Package(
                 "SnapshotTesting",
                 "Quick"
             ],
-            path: "Sources"
+            path: "Sources",
+            exclude: ["Info.plist"]
          ),
         .testTarget(
             name: "SnapshotTesting-NimbleTests",
             dependencies: ["SnapshotTesting-Nimble"],
-            path: "Tests"
+            path: "Tests",
+            exclude: ["Info.plist", "__Snapshots__/"]
          )
     ],
     swiftLanguageVersions: [.v5]
