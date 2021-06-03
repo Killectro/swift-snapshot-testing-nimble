@@ -5,6 +5,5 @@ xcodebuild \
   	-project SnapshotTesting-Nimble.xcodeproj \
   	-scheme SnapshotTesting-Nimble \
   	-sdk iphonesimulator \
-  	-destination 'platform=iOS Simulator,name=iPhone 11,OS=14.5' \
-  	-derivedDataPath 'build'
+  	-destination 'platform=iOS Simulator,name=iPhone 11'
   
