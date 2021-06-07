@@ -1,4 +1,4 @@
-name: Package and Release
+name: Test, Build, and Release
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
           ./ci-scripts/test.sh
 
   package-job:
-    name: Build and Package
+    name: Build
     runs-on: macos-latest
     needs: test-job
     env:
