@@ -19,6 +19,9 @@ DerivedData
 *.hmap
 *.ipa
 
+# SPM
+.build/*
+
 # Bundler
 .bundle
 
