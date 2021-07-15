@@ -1,4 +1,4 @@
-github "Quick/Quick" "v2.1.0"
-github "Quick/Nimble" "v8.1.2"
-github "pointfreeco/swift-snapshot-testing" ~> 1.8.2
+github "Quick/Quick" ~> 4.0.0
+github "Quick/Nimble" ~> 9.0.0
+github "pointfreeco/swift-snapshot-testing" ~> 1.0.0
 
