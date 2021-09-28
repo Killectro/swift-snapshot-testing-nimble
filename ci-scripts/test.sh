@@ -1,10 +1,8 @@
 #!/bin/bash
 
-swift test
-
-# xcodebuild \
-# 	test-without-building \
-# 	-project SnapshotTesting-Nimble.xcodeproj \
-#   	-scheme SnapshotTesting-Nimble \
-#   	-sdk iphonesimulator \
-#   	-destination 'platform=iOS Simulator,name=iPhone 11'
+xcodebuild \
+	test \
+	-project SnapshotTesting-Nimble.xcodeproj \
+  	-scheme SnapshotTesting-Nimble \
+  	-sdk iphonesimulator \
+  	-destination 'platform=iOS Simulator,OS=15.0,name=iPhone 11 Pro'
