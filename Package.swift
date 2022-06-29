@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "SnapshotTestingNimble", targets: ["SnapshotTesting-Nimble"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "9.2.0")),
+        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "10.0.0")),
         .package(name: "SnapshotTesting", url: "https://github.com/pointfreeco/swift-snapshot-testing", .upToNextMajor(from: "1.9.0")),
         .package(url: "https://github.com/Quick/Quick", .upToNextMajor(from: "4.0.0")),
     ],
